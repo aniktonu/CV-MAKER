@@ -2,7 +2,15 @@
 <html>
 
 <head>
+    <style>
+        div {
+            height: auto;
+            width: auto;
+            margin: 10px;
+            border: 1px solid;
 
+        }
+    </style>
 </head>
 
 <body>
@@ -10,13 +18,17 @@
     <h2>html</h2>
     <p>The HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the
         root element. All other elements must be descendants of this element.</p>
-    <p>Chlid: no</p>
-    <p>Attribute: no</p>
+    <p>Chlid: One head element, followed by one body element.</p>
+    <p>Attribute: No</p>
+    <p><strong>Example:</strong></p>
     <div>
-        Example:
         <xmp>
             <!DOCTYPE html>
-            <html>
+            <html lang="en">
+
+            <head>...</head>
+
+            <body>...</body>
 
             </html>
         </xmp>
@@ -25,10 +37,12 @@
     <h2>head</h2>
     <p>The head element contains machine-readable information (metadata) about the document, like its title, scripts,
         and style sheets.</p>
-    <p>Chlid: no</p>
-    <p>Attribute: no</p>
+    <p>Chlid: One titile element</p>
+    <p>Attribute: No</p>
+    <p><strong>Example:</strong></p>
+
     <div>
-        Example:
+
         <xmp>
             <!doctype html>
             <html>
@@ -44,48 +58,213 @@
 
     <h2>body</h2>
     <p>The body element represents the content of an HTML document. There can be only one body element in a document</p>
-    <p>Chlid: no</p>
-    <p>Attribute: no</p>
+    <p>Chlid: all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists,
+        etc.</p>
+    <p>Attribute: No</p>
+    <p><strong>Example:</strong></p>
+
     <div>
-        Example:
+
         <xmp>
-            <!doctype html>
             <html>
 
-            <head> </head>
+            <head>
+                <title>Title of the document</title>
+            </head>
 
             <body>
-                <p>This is a paragraph</p>
+                <h1>This is a heading</h1>
+                <p>This is a paragraph.</p>
             </body>
 
             </html>
-        </xmp>
-    </div>
 
-    <h2>div</h2>
-    <p>the div element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).</p>
-    <p>Chlid: no</p>
-    <p>Attribute: no</p>
-    <div>
-        Example:
-        <xmp>
-            <!doctype html>
-            <html>
 
-            <head> </head>
+</html>
+</xmp>
+</div>
 
-            <body>
-               
-                <div>
-                    <p>Any kind of content here. Such as
-                    &lt;p&gt;, &lt;table&gt;. You name it!</p>
-                  </div>
-            </body>
 
-            </html>
-        </xmp>
-    </div>
-    <!--   <h2>table</h2>
+<h2>h1 to h6</h2>
+<p> The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the
+    lowest. </p>
+<p>Chlid: No
+</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+    </xmp>
+</div>
+
+<h2>p</h2>
+<p>The p tag defines a paragraph.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p>
+            My Bonnie lies over the ocean.
+            My Bonnie lies over the sea.
+            My Bonnie lies over the ocean.
+            Oh, bring back my Bonnie to me.
+        </p>
+    </xmp>
+</div>
+
+
+
+<h2>b</h2>
+<p> The b tag specifies bold text without any extra importance.
+    According to the HTML5 specification, the b tag should be used as a LAST resort when no other tag is more
+    appropriate.
+</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p>This is normal text - <b>and this is bold text</b>.</p>
+
+    </xmp>
+</div>
+
+
+<h2>strong</h2>
+<p> The strong tag is used to define text with strong importance. The content inside is typically displayed in bold.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <strong>This text is important!</strong>
+
+    </xmp>
+</div>
+
+
+<h2>u</h2>
+<p> The u tag represents some text that is unarticulated and styled differently from normal text, such as misspelled
+    words or proper names in Chinese text. The content inside is typically displayed with an underline.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p>This is some <u>mispeled</u> text.</p>
+
+    </xmp>
+</div>
+
+
+<h2>i</h2>
+<p> The i tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+    The i tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+        <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+
+    </xmp>
+</div>
+
+<h2>br</h2>
+<p> The br tag inserts a single line break.
+
+    The br tag is useful for writing addresses or poems.
+
+    The br tag is an empty tag which means that it has no end tag.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p> O’er all the hilltops<br>
+            Is quiet now,<br>
+            In all the treetops<br>
+            Hearest thou<br>
+            Hardly a breath;<br>
+            The birds are asleep in the trees:<br>
+            Wait, soon like these<br>
+            Thou too shalt rest.
+        </p>
+
+    </xmp>
+</div>
+
+
+<h2>hr</h2>
+<p> The hr HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in
+    a story, or a shift of topic within a section.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+
+        <hr>
+
+        <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+
+
+    </xmp>
+</div>
+
+
+
+
+
+
+
+<h2>div</h2>
+<p>The div tag defines a division or a section in an HTML document.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <div class="warning">
+            <img src="/media/examples/leopard.jpg" alt="An intimidating leopard.">
+            <p>Beware of the leopard</p>
+        </div>
+    </xmp>
+</div>
+
+
+
+
+<!--   <h2>table</h2>
     <p>table is something ...</p>
     <p>Chlid: tr, th, td</p>
     <p>Attribute: border, cellspacing</p>
@@ -106,14 +285,14 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Documentation</a>
     
     !doctype
-    html
-    head
-    body
-    div
+    html/
+    head/
+    body/
+    div/
     table(child-tag: tr, th, td), (attribute: border, cellspacing, align)
     table/tr/td: attribute(align, valign)
     img
-    p
+    p/
     style
     pre
     code
@@ -121,14 +300,14 @@
     dl(dd,dt)
     ul(li)
     ol(li)
-    h1,h2,h3,h4,h5,h6
+    h1,h2,h3,h4,h5,h6/
     span
     a
-    br
-    hr
-    u
-    i
-    b
+    br/
+    hr/
+    u/
+    i/
+    b/
 -->
 
 </body>
