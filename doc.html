@@ -15,7 +15,7 @@
 
 <body>
 
-    <h2>html</h2>
+    <h2>HTML: HyperText Markup Language</h2>
     <p>The HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the
         root element. All other elements must be descendants of this element.</p>
     <p>Chlid: One head element, followed by one body element.</p>
@@ -34,7 +34,7 @@
         </xmp>
     </div>
 
-    <h2>head</h2>
+    <h2>head : The Document Metadata (Header) element</h2>
     <p>The head element contains machine-readable information (metadata) about the document, like its title, scripts,
         and style sheets.</p>
     <p>Chlid: One titile element</p>
@@ -56,7 +56,7 @@
     </div>
 
 
-    <h2>body</h2>
+    <h2>body : The Document Body element</h2>
     <p>The body element represents the content of an HTML document. There can be only one body element in a document</p>
     <p>Chlid: all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists,
         etc.</p>
@@ -85,7 +85,7 @@
 </div>
 
 
-<h2>h1 to h6</h2>
+<h2>h1 to h6 : The HTML Section Heading elements</h2>
 <p> The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the
     lowest. </p>
 <p>Chlid: No
@@ -105,7 +105,7 @@
     </xmp>
 </div>
 
-<h2>p</h2>
+<h2>p : The Paragraph element</h2>
 <p>The p tag defines a paragraph.</p>
 <p>Chlid: No</p>
 <p>Attribute: No</p>
@@ -125,7 +125,7 @@
 
 
 
-<h2>b</h2>
+<h2>b : The Bring Attention To element</h2>
 <p> The b tag specifies bold text without any extra importance.
     According to the HTML5 specification, the b tag should be used as a LAST resort when no other tag is more
     appropriate.
@@ -143,7 +143,7 @@
 </div>
 
 
-<h2>strong</h2>
+<h2>strong : The Strong Importance element</h2>
 <p> The strong tag is used to define text with strong importance. The content inside is typically displayed in bold.</p>
 <p>Chlid: No</p>
 <p>Attribute: No</p>
@@ -158,7 +158,7 @@
 </div>
 
 
-<h2>u</h2>
+<h2>u : The Unarticulated Annotation (Underline) element</h2>
 <p> The u tag represents some text that is unarticulated and styled differently from normal text, such as misspelled
     words or proper names in Chinese text. The content inside is typically displayed with an underline.</p>
 <p>Chlid: No</p>
@@ -174,7 +174,7 @@
 </div>
 
 
-<h2>i</h2>
+<h2>i : The Idiomatic Text element</h2>
 <p> The i tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
     The i tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
 </p>
@@ -192,7 +192,7 @@
     </xmp>
 </div>
 
-<h2>br</h2>
+<h2>br : The Line Break element</h2>
 <p> The br tag inserts a single line break.
 
     The br tag is useful for writing addresses or poems.
@@ -219,7 +219,7 @@
 </div>
 
 
-<h2>hr</h2>
+<h2>hr : The Thematic Break (Horizontal Rule) element</h2>
 <p> The hr HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in
     a story, or a shift of topic within a section.</p>
 <p>Chlid: No</p>
@@ -239,13 +239,22 @@
     </xmp>
 </div>
 
+<h2>img : The Image Embed element</h2>
+<p> The img tag is used to embed an image in an HTML page.
+    Images are not technically inserted into a web page; images are linked to web pages. </p>
+<p>Chlid: No</p>
+<p>Attribute: src (Specifies the path to the image), alt (Specifies an alternate text for the image, if the image for
+    some reason cannot be displayed)</p>
+<p><strong>Example:</strong></p>
 
+<div>
 
+    <xmp>
+        <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+    </xmp>
+</div>
 
-
-
-
-<h2>div</h2>
+<h2>div : The Content Division element</h2>
 <p>The div tag defines a division or a section in an HTML document.</p>
 <p>Chlid: No</p>
 <p>Attribute: No</p>
@@ -261,7 +270,49 @@
     </xmp>
 </div>
 
+<h2>table : The Table element</h2>
+<p> The table tag defines an HTML table.
 
+    An HTML table consists of one table element and one or more <tr>, <th>, and
+        <td> elements.
+
+            The tr element defines a table row, the th element defines a table header, and the td element defines a
+            table cell.</p>
+<p>Chlid: tr ,th, td</p>
+<p>Attribute: align, valign, width , height, boder , cellspacing </p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+        </head>
+
+        <body>
+
+            <h1>The table element</h1>
+
+            <table>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+            </table>
+
+
+    </xmp>
+</div>
 
 
 <!--   <h2>table</h2>
@@ -289,9 +340,9 @@
     head/
     body/
     div/
-    table(child-tag: tr, th, td), (attribute: border, cellspacing, align)
-    table/tr/td: attribute(align, valign)
-    img
+    table(child-tag: tr, th, td), (attribute: border, cellspacing, align)/
+    table/tr/td: attribute(align, valign)/
+    img/
     p/
     style
     pre
