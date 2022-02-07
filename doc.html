@@ -14,6 +14,22 @@
 </head>
 
 <body>
+    <h2>!DOCTYPE </h2>
+    <p>All HTML documents must start with a !DOCTYPE declaration.
+
+        The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+    </p>
+    <p>Chlid: No</p>
+    <p>Attribute: No</p>
+    <p><strong>Example:</strong></p>
+
+    <div>
+
+        <xmp>
+            <!doctype html>
+        </xmp>
+    </div>
+
 
     <h2>HTML: HyperText Markup Language</h2>
     <p>The HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the
@@ -273,13 +289,63 @@
 <h2>table : The Table element</h2>
 <p> The table tag defines an HTML table.
 
-    An HTML table consists of one table element and one or more <tr>, <th>, and
-        <td> elements.
+    An HTML table consists of one table element and one or more tr, th, and
+    td elements.
 
-            The tr element defines a table row, the th element defines a table header, and the td element defines a
-            table cell.</p>
+    The tr element defines a table row, the th element defines a table header, and the td element defines a
+    table cell.</p>
 <p>Chlid: tr ,th, td</p>
 <p>Attribute: align, valign, width , height, boder , cellspacing </p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <table>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+        </table>
+
+
+    </xmp>
+</div>
+
+<h2>a : The Anchor element</h2>
+<p> The a tag defines a hyperlink, which is used to link from one page to another.
+
+    The most important attribute of the a element is the href attribute, which indicates the link's destination.
+</p>
+<p>Chlid: No</p>
+<p>Attribute: href , target</p>
+</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+
+
+    </xmp>
+</div>
+
+<h2>li : The List Item element</h2>
+<p>The li tag defines a list item.
+
+    The li tag is used inside ordered lists ol, unordered lists ul, and in menu lists menu.
+
+    In ul and menu, the list items will usually be displayed with bullet points.
+
+    In ol, the list items will usually be displayed with numbers or letters.</p>
+<p>Chlid: ol , ul, menu </p>
+<p>Attribute: value</p>
+</p>
 <p><strong>Example:</strong></p>
 
 <div>
@@ -288,32 +354,92 @@
         <!DOCTYPE html>
         <html>
 
-        <head>
-        </head>
-
         <body>
 
-            <h1>The table element</h1>
+            <h1>The ol and ul elements</h1>
 
-            <table>
-                <tr>
-                    <th>Month</th>
-                    <th>Savings</th>
-                </tr>
-                <tr>
-                    <td>January</td>
-                    <td>$100</td>
-                </tr>
-                <tr>
-                    <td>February</td>
-                    <td>$80</td>
-                </tr>
-            </table>
+            <p>The ol element defines an ordered list:</p>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+            <p>The ul element defines an unordered list:</p>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+        </body>
+
+        </html>
 
 
     </xmp>
 </div>
 
+<h2>dl : The Description List element</h2>
+<p>The dl tag defines a description list.
+
+    The dl tag is used in conjunction with dt (defines terms/names) and dd (describes each term/name).</p>
+<p>Chlid: dt, dd</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+    </xmp>
+</div>
+
+<h2>pre : : The Preformatted Text element</h2>
+<p>The pre tag defines preformatted text.
+
+    Text in a pre element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The
+    text will be displayed exactly as written in the HTML source code.
+</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <<pre>
+            Text in a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both spaces and
+            line breaks
+            </pre>
+
+    </xmp>
+</div>
+
+<h2> span : The Content Span element</h2>
+<p>The span tag is an inline container used to mark up a part of a text, or a part of a document.
+
+    The span tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+
+    The span tag is much like the div element, but div is a block-level element and span is an inline element.</p>
+<p>Chlid: No</p>
+<p>Attribute: No</p>
+<p><strong>Example:</strong></p>
+
+<div>
+
+    <xmp>
+        <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+    </xmp>
+</div>
 
 <!--   <h2>table</h2>
     <p>table is something ...</p>
@@ -335,7 +461,7 @@
 
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Documentation</a>
     
-    !doctype
+    !doctype/
     html/
     head/
     body/
@@ -345,15 +471,15 @@
     img/
     p/
     style
-    pre
+    pre/
     code
     xmp
-    dl(dd,dt)
-    ul(li)
-    ol(li)
+    dl(dd,dt)/
+    ul(li)/
+    ol(li)/
     h1,h2,h3,h4,h5,h6/
-    span
-    a
+    span/
+    a/
     br/
     hr/
     u/
