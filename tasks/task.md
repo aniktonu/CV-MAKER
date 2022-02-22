@@ -1,3 +1,8 @@
+# 23.02.2022
+1. Solve the fundamental problems.
+2. Solve the problems of if-else if possible.
+
+
 # 02.02.2022
 1. coninue updating doc.html
 2. install IIS and deploy resume-maker
