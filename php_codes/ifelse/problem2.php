@@ -1,13 +1,19 @@
 <?php
+//Input 3 numbers and print either an "all 3 equal" or a "not all equal" message
 
-//Input the dimensions of a rectangle and print area and perimeter.
+$number1 = readline ("Enter 1st Number: ");
+$number2 = readline ("Enter 2nd Number: ");
+$number3 = readline ("Enter 3rd Number: ");
 
-$length = readline ("\nEnter lenght value : ");
-$width = readline ("\nEnter width value : ");
 
-$area = $length * $width;
-$perimeter = 2 * ($length + $width);
+if ($number1 == $number2 and $number1 == $number3){
+    echo "all 3 equal";
 
-echo "\nThe area of the rectangle is : ".$area;
-echo "\nThe perimeter of the rectangle is : ".$area;
+}
+else {
+    echo "Not all equal";
+}
+
+
+
 ?>

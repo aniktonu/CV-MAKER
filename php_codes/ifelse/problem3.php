@@ -1,10 +1,27 @@
 <?php
-//Write a program to find the area and circumference of circle for a given radius.
 
-$radius = readline ("\nEnter Radis Value : ");
-$area = 3.14 * ($radius * $radius);
-$circumference = 2 * 3.14 * $radius; //default value of PI = 3.14
+//Write a program to find a given number is greater than 100 and less than 250 and divisible by 7. 
 
-echo "\nThe area of circle for radius ".$radius." is ".$area."\n" ;
-echo "The circumference of circle for radius ".$radius." is ".$circumference;
+
+    $number = readline ("Enter number : ") ;
+
+
+    if ($number > 100){
+        if ($number <250){
+            if ($number % 7 == 0){
+                echo "$number is greater than 100 and less than 250 and divisible by 7";
+            }
+            else {
+    echo "The number is greather than 100 and less than 250 but not divisible by 7";
+            }
+        }
+    else {
+
+    echo "The number is greather than 100 but not less than 250";
+    }
+    }
+    else {
+    echo "The number is not greather than 100" ;
+
+    }
 ?>

@@ -1,14 +1,17 @@
 <?php
-//If there are 200 examinees in BU admission test and available seat is 25 then how many contestant is there for each seat.
+//Write a program to find a given number is positive or negative.
 
-$examinees = 200 ;
-$seat = 25 ; 
-$contestant = $examinees / $seat ; 
+    $number = readline ("Enter a number : ");
 
-echo "\nNumber of examinees is ".$examinees;
-echo "\nNumber of seat is ".$seat;
-echo "\nSo there are  ".$contestant." contestant is for each seat" ;
-
-?>
-
+    if ($number >= 0){
+        if ($number > 0){
+        echo "Positive Number";
+    }
+        else {
+        echo "Zero Number";
+    }
+    }
+    else {
+    echo "Negative Number";
+    }
 ?>

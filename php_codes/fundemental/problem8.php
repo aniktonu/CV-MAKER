@@ -5,6 +5,6 @@
 $amount = 100000 ;
 $interest = 13 ;
 $time = 1 ; 
-$money = null ;
+$money =  ;
 
 ?>

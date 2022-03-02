@@ -1,15 +1,15 @@
 <?php
-//Write a program to interchange the value of two variables, say x and y.
-$x = readline ("\nEnter value of x : ");
-$y = readline ("\nEnter value of y : ");
+//Write a program to find the larger one from two given numbers.
 
-echo "\nThe number before interchange is :\n" ;
-echo "Number x = ".$x.", Number y = ".$y ;
+$number1 = readline ("\nEnter 1st Number: ");
+$number2 = readline ("Enter 2nd Number: ");
 
-$temp = $x;
-$x = $y;
-$y = $temp;
+if($number1 > $number2) {
+    echo $number1." is the larger number"; 
+}
+else
+{
+    echo $number2." is the larger number";
+}
 
-echo "\nThe number after interchange is :\n" ;
-echo "Number x = ".$x.", Number y = ".$temp ;
 ?>
