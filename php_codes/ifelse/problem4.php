@@ -1,9 +1,12 @@
 <?php
-//Write a program to calculate the VAT of given amount.
-$amount = readline ("\nEnter Amount : \n");
-$vatvalue  =  readline ("The VAT rate : "); 
+//Write a program to find a given number is greater than 100 and less than 250 or divisible by 7.
 
-$vat = ($amount / 100) * $vatvalue;
+    $number = readline ("Enter a Number : ");
 
-echo "\nThe ".$vatvalue." percent vat of ".$amount." is : ".$vat."\n" ;
+    if ($number > 100 and $number < 250 or $number % 7==0){
+    echo "The number is greater than 100 and less than 250 or divisible by 7.";
+    }
+    else {
+    echo "The number is not greater than 100 and less than 250 or divisible by 7.";
+    }
 ?>
