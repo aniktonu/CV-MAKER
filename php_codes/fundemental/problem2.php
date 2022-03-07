@@ -2,12 +2,12 @@
 
 //Input the dimensions of a rectangle and print area and perimeter.
 
-$length = readline ("\nEnter lenght value : ");
-$width = readline ("\nEnter width value : ");
+$length = readline ("Enter lenght value : ");
+$width = readline ("Enter width value : ");
 
-$area = $length * $width;
-$perimeter = 2 * ($length + $width);
+$area = $length*$width;
+$perimeter = 2*($length+$width);
 
-echo "\nThe area of the rectangle is : ".$area;
-echo "\nThe perimeter of the rectangle is : ".$perimeter;
+echo "The area of the rectangle is : ".$area."\n";
+echo "The perimeter of the rectangle is : ".$perimeter;
 ?>

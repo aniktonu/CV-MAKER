@@ -1,7 +1,7 @@
 <?php
 //Write a program to interchange the value of two variables, say x and y.
-$x = readline ("\nEnter value of x : ");
-$y = readline ("\nEnter value of y : ");
+$x = readline ("Enter value of x : ");
+$y = readline ("Enter value of y : ");
 
 echo "\nThe number before interchange is :\n" ;
 echo "Number x = ".$x.", Number y = ".$y ;

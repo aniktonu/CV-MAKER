@@ -1,9 +1,9 @@
 <?php
-//
-$amount = readline ("\nEnter Amount : \n");
-$vatvalue  =  readline ("The VAT rate : "); //$vatpercentage
+//Write a program to calculate the VAT of given amount.
+$amount = readline ("Enter Amount : ");
+$vatpercentage =  readline ("Enter the VAT parcentage rate : "); 
 
-$vat = ($amount / 100) * $vatvalue;
+$vat = ($amount*$vatpercentage)/100;
 
-echo "\nThe ".$vatvalue." percent vat of ".$amount." is : ".$vat."\n" ;
+echo $vatpercentage." percent VAT of the amount ".$amount." is : ".$vat."\n" ;
 ?>
