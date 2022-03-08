@@ -1,3 +1,7 @@
+# 10.03.2022
+1. Redo the peroblamatic if-else problems
+2. Solve the function problems
+
 # 23.02.2022
 1. Solve the fundamental problems.
 2. Solve the problems of if-else if possible.

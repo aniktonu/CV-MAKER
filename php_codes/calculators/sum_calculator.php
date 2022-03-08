@@ -1,8 +1,8 @@
 <?php
 echo "-----ADDITION CALCULATOR------" ;
 echo "\n" ;
-$lhs = readline ("Enter LHS : ") ;
-$rhs = readline ("ENTER RHS : ") ;
+$lhs = readline("Enter LHS : ");
+$rhs = readline("ENTER RHS : ");
 
 echo "\n";
 $result = $lhs + $rhs ; 

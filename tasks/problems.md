@@ -25,3 +25,9 @@
 10.	Write a program to find the maximum number from three given numbers.
 11.	Write a program to find the minimum number from three given numbers.
 12.	Write a program which will print the grade letter for a given marks.
+
+
+## Function
+1. Convert all the calculator programs into fuctions.
+2. Convert all the fundemental problems into functions
+3. Convert all the if-else problems into functions
